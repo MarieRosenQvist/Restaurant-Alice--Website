@@ -1,0 +1,13 @@
+:root {
+  /* Colours */
+  --color-bg: #e8deae; /* page background /*
+
+  /* Header */
+  --color-overskift: #ffffff;
+
+  /* p */
+  --color-logotype-bg: #ffffff;
+  --color-text-logotype: #ffffff;
+  --font-logotype-size: 4rem;
+  font-size: var(--color-headline-bg);
+}
