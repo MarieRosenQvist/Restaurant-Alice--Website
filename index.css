@@ -1,4 +1,20 @@
 
+
+body {
+  font-family: lalezar;
+  margin: 0;
+  padding: 0;
+  background-color: #E8DEAEFC;
+  color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+
 /*****FORSIDE****/
 .forside-billede {
   width: 400px;
@@ -29,7 +45,7 @@
 footer {
   text-align: center;
   padding: 20px;
-  background-color: #ffffff;
+  background-color: #44613C;
   margin-top: 40px;
 }
 
@@ -41,8 +57,8 @@ footer {
 }
 
 .socials img {
-  width: 30px;
-  height: 30px;
+  width: 38.5px;
+  height: 32px;
 }
 .image-gallery {
   display: grid;
@@ -63,6 +79,23 @@ footer {
 
 .image-gallery img:hover {
   transform: scale(1.03);
+}
+
+/*******''HEADER********/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: #E8DEAEFC;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.alice_logo_orang img {
+  height: 60px;
+  width: auto;
 }
 
 
