@@ -1,28 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="dk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <link rel="stylesheet" href="mutualstyle.css" />
+    <link rel="stylesheet" href="omalice.css" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="noindex">
-    <link rel="stylesheet" href="mutualstyle.css">
-    <link rel="stylesheet" href="omalice.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Iansui&family=Neonderthaw&display=swap" rel="stylesheet" />
+
     <title>Om Alice</title>
+    <link rel="icon" type="alice_favicon" href="img/alice_favicon.webp" />
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <header>
+      <nav>
+   <div id="logo">
+  <a href="index.html" class="logo-link" aria-label="Forside">
+    <img src="img/alice_logo_orange.webp" alt="Alice logo" class="logo">
+  </a>
+</div>
 
+
+        <ul class="menu">
+          <li><a class="menuItem" href="index.html">Forside</a></li>
+          <li><a class="menuItem" href="bookbord.html">Book bord</a></li>
+          <li><a class="menuItem" href="detvarmevindue.html">Alice vindue</a></li>
+          <li><a class="menuItem" href="omalice.html">Om Alice</a></li>
+        </ul>
+        <button class="burger">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </button>
+      </nav>
     </header>
     <main>
+      <section id="om_alice">
+        <h1>Om Alice</h1>
+        <article class="om-Rasmus-section">
+          <h1>Rasmus – Køkkenchef</h1>
+          <img src="img/rasmus.webp" alt="Billede af Rasmus, køkkenchef på Restaurant Alice" />
+          <p>
+            Rasmus er køkkenchef med hjertet solidt plantet i håndværket og blikket rettet mod helheden. For ham handler mad ikke om at imponere for imponeringens skyld, men om smag, kvalitet og den oplevelse, gæsten tager med sig hjem. Han arbejder kompromisløst med råvarer og teknik, men altid med respekt for det enkle og det genkendelige. Rasmus er vokset op med mad som samlingspunkt og har gennem årene opbygget erfaring fra mange forskellige køkkener. De mange veje har formet hans stil, men grundidéen er den samme: god mad skal føles rigtig – ikke forklares ihjel. I køkkenet er han rolig, fokuseret og tydelig, og han tror på, at de bedste retter opstår, når der er tillid, faglighed og fælles retning. I dag står Rasmus i spidsen for køkkenet i Rødovre, hvor han har fundet et sted, der
+            matcher både hans faglighed og hans værdier. Her laver han mad, der samler mennesker – præcis som det altid har været hans mål.
+          </p>
+        </article>
 
+        <div class="om-Birk-section">
+          <h1>Birk – Restaurantchef</h1>
+          <img src="img/birk.webp" alt="Billede af Birk, restaurantchef på Restaurant Alice" />
+          <p>
+            Birk er restaurantchef med værtskab helt ind i rygraden. Han er typen, der ser gæsterne, før de selv ved, hvad de mangler – og som får både stamgæster og førstegangsbesøgende til at føle sig hjemme. For Birk handler restaurantdrift om mennesker: dem, der kommer ind ad døren, og dem, der arbejder bag den. Han har en naturlig ro og varme, som smitter af på stemningen i rummet. Struktur og overblik går hånd i hånd med nærvær og humor, og han tror på, at den bedste service opstår, når professionalisme og menneskelighed får lov at følges ad. Birk har gennem årene arbejdet mange steder og taget erfaringer med sig fra både store og små sammenhænge. I Rødovre har han fundet et sted, hvor han kan sætte værtskabet i centrum og skabe rammer, hvor gæster har lyst til at blive lidt længere.
+          </p>
+        </div>
+
+        <div class="om-Alice-section">
+          <h1>Alice – Mormoren, navnet og hjertet</h1>
+          <img src="img/alice.webp" alt="Billede af Alice, mormoren bag Restaurant Alice" />
+          <p>
+            Alice var Rasmus’ mormor – men hun blev meget mere end det. Hun var samlingspunkt, varme hænder og et åbent hjerte. Da Birk voksede op uden selv at have en mormor, tog Alice ham ind som sit eget barnebarn. Hos hende var der altid plads ved bordet, tid til snak og en følelse af at høre til. Rasmus og Birk er vokset op sammen med Alice som det naturlige midtpunkt. Det var hos hende, fællesskabet blev formet, og det var dér, grundstenen blev lagt for det, de begge arbejder med i dag: at skabe steder, hvor mennesker føler sig velkomne. Efter mange år, hvor Rasmus og Birk har arbejdet hver deres steder, blev de genforenet i Rødovre. Den 1. september 2024 stod de igen side om side – nu som chefer på hver deres side af klappen. Med Alice som fælles omdrejningspunkt, i navn, ånd og
+            værdier, driver de i dag et sted, hvor varme, fællesskab og kvalitet går hånd i hånd. Alice er måske ikke længere fysisk til stede – men hun er der stadig. I stemningen, i mødet mellem mennesker og i den måde, der bliver taget imod gæster på.
+          </p>
+        </div>
+      </section>
     </main>
-    <footer>
-
-    </footer>
+    <footer></footer>
     <script src="js/login.js"></script>
-</body>
-
+    <script src="js/burger.js"></script>
+  </body>
 </html>
