@@ -11,3 +11,74 @@
   --font-logotype-size: 4rem;
   font-size: var(--color-headline-bg);
 }
+/*******HEADER********/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: #E8DEAEFC;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.alice_logo_orang img {
+  height: 60px;
+  width: auto;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #e3ab3c;
+}
+
+
+/*********FOOTER********/
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #44613C;
+  margin-top: 40px;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.socials img {
+  width: 38.5px;
+  height: 32px;
+}
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  padding: 30px;
+  justify-items: center;
+}
+
+.image-gallery img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.image-gallery img:hover {
+  transform: scale(1.03);
+}
+
+
+

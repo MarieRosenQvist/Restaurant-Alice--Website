@@ -81,7 +81,7 @@ footer {
   transform: scale(1.03);
 }
 
-/*******''HEADER********/
+/*******HEADER********/
 header {
   display: flex;
   justify-content: space-between;
@@ -96,6 +96,17 @@ header {
 .alice_logo_orang img {
   height: 60px;
   width: auto;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #e3ab3c;
 }
 
 
