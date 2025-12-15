@@ -127,7 +127,9 @@ h2 {
   padding: 2rem;
   padding-top: 10rem;
   background-color: #44613c;
-  border: ;
+  border: #e8deae 5px solid;
 }
 .om-Birk-section {
+  display: grid;
+  grid-row: reverse 1fr 1fr;
 }
