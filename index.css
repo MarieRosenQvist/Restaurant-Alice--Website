@@ -39,6 +39,13 @@ a {
   align-items: center;
   gap: 15px;
 }
+.menu {
+  display: inline-block;
+  background-color: #44613C;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
 
 
 /*********FOOTER********/
