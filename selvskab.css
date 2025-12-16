@@ -9,3 +9,18 @@ body {
 
 h2 {
 }
+
+
+.forsideselskab {
+  width: 400px;
+  height: auto;
+  margin: 20px 0;
+}
+
+.forsideselskab {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  justify-items: center;
+}
+
