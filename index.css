@@ -135,3 +135,15 @@ footer {
 .image-gallery img:hover {
   transform: scale(1.03);
 }
+
+
+/******MOBILVERSION*******/
+@media (max-width: 768px) {
+  .billede-række {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .billede-række img {
+    height: 120px;
+  }
+}
