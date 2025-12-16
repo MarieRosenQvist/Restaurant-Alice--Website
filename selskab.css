@@ -1,0 +1,36 @@
+body {
+  background-color: #e8deae;
+  color: white;
+}
+
+.bookninger {
+  background-color: #44613c;
+}
+
+/*******HEADER********/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: #e8deaefc;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.alice_logo_orang img {
+  height: 60px;
+  width: auto;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #e3ab3c;
+}
