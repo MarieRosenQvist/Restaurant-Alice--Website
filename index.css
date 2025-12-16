@@ -1,4 +1,35 @@
 
+/*******HEADER********/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: #E8DEAEFC;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.alice_logo_orang img {
+  height: 60px;
+  width: auto;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #e3ab3c;
+}
+
+
+
+/*******BODY*****/
 
 body {
   font-family: lalezar;
@@ -14,7 +45,6 @@ a {
 }
 
 
-
 /*****FORSIDE****/
 .forside-billede {
   width: 400px;
@@ -24,14 +54,15 @@ a {
 .forside-billeder {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 15px;
+  gap: 1px;
   justify-items: center;
 }
 
 .forside-billeder img {
-  width: 100%;
-  max-width: 200px;
-  border-radius: 10px;
+  width: 200%;
+  max-width: 230px;
+  border-radius: 60px;
+  margin: 100px;
 }
 .center-content {
   display: flex;
@@ -46,7 +77,12 @@ a {
   border-radius: 10px;
   margin-bottom: 20px;
 }
-
+.center-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
 
 /*********FOOTER********/
 footer {
@@ -87,34 +123,4 @@ footer {
 .image-gallery img:hover {
   transform: scale(1.03);
 }
-
-/*******HEADER********/
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 40px;
-  background-color: #E8DEAEFC;
-  position: sticky;
-  top: 0;
-  z-index: 10;
-}
-
-.alice_logo_orang img {
-  height: 60px;
-  width: auto;
-}
-
-.nav-links {
-  display: flex;
-  list-style: none;
-  gap: 20px;
-}
-
-.nav-links a:hover,
-.nav-links a.active {
-  color: #e3ab3c;
-}
-
-
 
