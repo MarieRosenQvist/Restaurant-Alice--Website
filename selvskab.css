@@ -1,13 +1,27 @@
+main {
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+/**********galleri desktop************/
+@media (min-width: 840px) {
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+  }
+}
+
+/***baggrunden***/
+
 body {
-  background-color: #e8deae;
-  color: white;
+  background-color: #e3ab3c;
+  color: rgb(182, 149, 149);
 }
 
 .bookninger {
   background-color: #44613c;
 }
-
-
 
 .forsideselskab {
   width: 400px;
@@ -22,3 +36,5 @@ body {
   justify-items: center;
 }
 
+.grid_2-1 {
+}
