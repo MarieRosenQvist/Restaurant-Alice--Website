@@ -5,7 +5,7 @@ main {
 
 /**********galleri desktop************/
 @media (min-width: 840px) {
-  .grid_1-1 {
+  .grid_1-1-1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 20px;
@@ -15,7 +15,7 @@ main {
 /***baggrunden***/
 
 body {
-  background-color: #e3ab3c;
+  background-color: #e8deae;
   color: rgb(182, 149, 149);
 }
 
@@ -24,14 +24,13 @@ body {
 }
 
 .forsideselskab {
-  width: 400px;
   height: auto;
   margin: 20px 0;
 }
 
 .forsideselskab {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  max-width: 900px;
+  margin-inline: auto;
   gap: 15px;
   justify-items: center;
 }
