@@ -1,24 +1,77 @@
+main {
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+/**********galleri desktop************/
+@media (min-width: 840px) {
+  .grid_1-1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+  }
+}
+
+/***baggrunden***/
+
 body {
   background-color: #e8deae;
-  color: white;
+  color: black;
 }
 
 .bookninger {
   background-color: #44613c;
 }
 
-
-
 .forsideselskab {
-  width: 400px;
   height: auto;
   margin: 20px 0;
 }
 
 .forsideselskab {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  max-width: 900px;
+  margin-inline: auto;
   gap: 15px;
   justify-items: center;
 }
 
+
+/*********FOOTER********/
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #44613C;
+  margin-top: 40px;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.socials img {
+  width: 38.5px;
+  height: 32px;
+}
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  padding: 30px;
+  justify-items: center;
+}
+
+.image-gallery img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.image-gallery img:hover {
+  transform: scale(1.03);
+}

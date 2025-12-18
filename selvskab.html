@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex">
     <link rel="stylesheet" href="mutualstyle.css">
-    <link rel="stylesheet" href="bookbord.css">
-    <title>Book Bord</title>
+    <link rel="stylesheet" href="selvskab.css">
+    <title>Selskaber</title>
 </head>
 
 <body>
@@ -22,7 +22,7 @@
             <ul class="nav-links">
                 <li><a href="menu.html">MENU</a></li>
                 <li><a href="detvarmevindue.html">DET VARME VINDUE</a></li>
-                <li><a href="selvskab.html">SELVSKAB</a></li>
+                <li><a href="selvskab.html">SELSKAB</a></li>
                 <li><a href="omalice.html">ALICE</a></li>
             </ul>
             <div class="burger">
@@ -33,9 +33,7 @@
         </nav>
         <nav>
 
-            <div id="logotype-wrapper" class="logo">
-                <a href="index.html"> Book Bord til større selvskaber </a>
-            </div>
+
 
             <ul class="menu">
                 <button class="burger">
@@ -51,21 +49,15 @@
         <section class="forsideselskab">
             <h1 class="center-text">Selskaber</h1>
             <div class="center-content">
-                <img src="img/selskab1.png" alt="Forsideselskab" class="forsideselskab">
+
+                <img src="img/selskaberwup.png" alt="Forsideselskab" class="forsideselskab">
+
             </div>
 
             <div class="bookninger">
                 <section id="form-section">
                     <article id="form-info">
-                        <h2>Book bord til større bookninger</h2>
-                        <p>En Aften på Alice
 
-                        <div> Velkomstbobler</div>
-                        <div>Tre-retters menu </div>
-                        <div>Vin, øl & vand Mineralvand med og uden brus Kaffe/te </div>
-
-                        <div>Pris pr. kuvert: 945 kr. (inkl. moms)Børn 4–10 år: 795 kr.
-                            Minimum 20 voksne5-timers arrangementSeneste ankomst kl. 19</div>
             </div>
             </p>
             </article>
@@ -78,22 +70,11 @@
                     <input type="email" id="email" name="email" placeholder="indsæt din email" required>
                     <label for="phone">Telefon</label>
                     <input type="phone" id="phone" name="phone" placeholder="indsæt dit nummer" required>
-                    <label for="Dato">Dato</label>
-                    <input type="Dato" id="Dato" name="Dato" placeholder="indsæt Dato" required>
-                    <label for="Antal personer">Antal personer</label>
-                    <input type="Antal personer" id="Antal personer" name="Antal personer"
-                        placeholder="indsæt antal personer" required>
+
                 </fieldset>
 
                 <fieldset>
-                    <legend>Særlige ønsker til bord og placering</legend>
-
-                    <textarea id="ønsker" name="ønsker" placehlder="Vinduesplads, barområde, stille område.."
-                        required></textarea>
-                </fieldset>
-
-                <fieldset>
-                    <legend>Anledning</legend>
+                    <legend>Anledning vælg én</legend>
                     <label>
                         <input type="radio" id="" name="løsninger" value="fødselsdag"> fødselsdag
                     </label>
@@ -105,57 +86,137 @@
                     <label>
                         <input type="radio" id="motion" name="løsninger" value="brullyp"> brullyp
                     </label>
-
+                    <label>
+                        <input type="radio" id="motion" name="løsninger" value="firmafest"> firmafest
+                    </label>
+                    <label>
+                        <input type="radio" id="motion" name="løsninger" value="barnedåb"> barnedåb
+                    </label>
+                    <label>
+                        <input type="radio" id="motion" name="løsninger" value="jubilæum"> jubilæum
+                    </label>
                 </fieldset>
 
                 <fieldset>
-                    <legend>Særlige ønsker til dekoration?</legend>
-                    <label for="name">Lys</label>
-                    <input type="text" id="Lys" name="Lys" placeholder="Lys" required>
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="indsæt din email" required>
-                    <label for="phone">Telefon</label>
-                    <input type="phone" id="phone" name="phone" placeholder="indsæt dit nummer" required>
-                    <label for="Dato">Dato</label>
-                    <input type="Dato" id="Dato" name="Dato" placeholder="indsæt Dato" required>
-                    <label for="Antal personer">Antal personer</label>
-                    <input type="Antal personer" id="Antal personer" name="Antal personer"
-                        placeholder="indsæt antal personer" required>
+                    <legend>Ønsket dato(er)</legend>
+
+                    <textarea id="ønsker" name="ønsker" placehlder="Vinduesplads, barområde, stille område.."
+                        required></textarea>
+
+                    <legend>Antal personer</legend>
+                    <textarea id="ønsker" name="ønsker" placehlder="" required></textarea>
                 </fieldset>
 
-                <fieldset>
-                    <legend>Allergier eller kosthensyn?</legend>
-                    <label for="">Glutenfri</label>
-                    <input type="text" id="Glutenfri" name="Glutenfri" placeholder="indsat antal" required>
-                    <label for="">vegetar</label>
-                    <input type="text" id="vegetar" name="vegetar" placeholder="indsat antal" required>
-                    <label for="">veganer</label>
-                    <input type="text" id="veganer" name="veganer" placeholder="indsat antal" required>
-                    <label for="">nøddeallergi osv?</label>
-                    <input type="text" id="nøddeallergi osv?" name="nøddeallergi osv?" placeholder="indsat antal"
-                        required>
-
-                </fieldset>
 
 
                 <fieldset>
-                    <legend>Andre hensyn</legend>
-                    <p>Informer omkring</p>
-                    <input type="range" name="Stresset?" id="Stres" value="minimum til maksisimum" min="0" max="10">
-                </fieldset>
 
-                </div>
 
-                <button type="send ind" id="send">send ind</button>
+                    <fieldset>
+                        <legend>Allergier eller kosthensyn?</legend>
+                        <label for="">Glutenfri</label>
+                        <input type="text" id="Glutenfri" name="Glutenfri" placeholder="indsat antal" required>
+                        <label for="">vegetar</label>
+                        <input type="text" id="vegetar" name="vegetar" placeholder="indsat antal" required>
+                        <label for="">veganer</label>
+                        <input type="text" id="veganer" name="veganer" placeholder="indsat antal" required>
+                        <label for="">nøddeallergi osv?</label>
+                        <input type="text" id="nøddeallergi osv?" name="nøddeallergi osv?" placeholder="indsat antal"
+                            required>
+
+                    </fieldset>
+
+
+                    </div>
+                    <fieldset>
+                        <button type="send ind" id="send">send ind</button>
+                    </fieldset>
             </form>
         </section>
 
+        <section class="grid_1-1-1-1">
+            <div>
+                <h2>En aften hos Alice</h2>
+
+                <p> Velkomstbobler</p>
+                <p>Tre-retters menu</p>
+                <p>Vin, øl & vandMineralvand med og uden brusKaffe/te</p>
+
+
+                Pris pr. kuvert: 945 kr. (inkl. moms)
+
+                <p>Børn 4–10 år: 795 kr.</p>
+                Minimum 20 voksne5-timers arrangement
+
+                <p>Seneste ankomst kl. 19</p>
+            </div>
+            <div>
+                <h2>Selskabspakken</h2>
+
+                <p> Velkomstbobler</p>
+                <p> Snacks</p>
+                <p>Tre-retters menu</p>
+                <p> Vin, øl & vand
+                    Mineralvand med og uden brus
+                    Kaffe/te
+                    Avec</p>
+                <p> Fri bar (blød bar + longdrinks)</p>
+
+                <p>Pris pr. kuvert: 1.145 kr. (inkl. moms)</p>
+                Børn 4–10 år: 795 kr.
+                <p> Minimum 20 voksne</p>
+                <p> 6-timers arrangement</p>
+                <p> Seneste ankomst kl. 18</p>
+            </div>
+            <div>
+                <h2> Den Store Selskabspakke</h2>
+
+                <p> Champagne</p>
+                <p>Snacks</p>
+                <p>Fire-retters menu</p>
+                <p>Vin, øl & vand
+                    Mineralvand med og uden brus
+                    Kaffe/te med sødt </p>
+                <p> Avec</p>
+                <p> Natmad</p>
+                <p>Fri bar (inkl. blød bar og longdrinks)</p>
+
+                <p> Pris pr. kuvert: 1.695 kr. (inkl. moms)</p>
+                <p> Børn 4–10 år: 795 kr.</p>
+                <p> Minimum 30 voksne</p>
+                <p>8-timers arrangement</p>
+                <p>Seneste ankomst kl. 18</p>
+            </div>
+            <div>
+                <h2>Tilkøb</h2>
+                <p>Ekstra ret fra 125 kr. pr. person </p>
+                <p> Saltede mandler til velkomst 25 kr. pr. person</p>
+                <p>Oliver til velkomst 25 kr. pr.person</p>
+                <p>Sødt til kaffe 20 kr. pr. person</p>
+                <p> Natmad Hotdogs 75 kr. pr. person</p>
+            </div>
+        </section>
+        </div>
+
+        <section>
+            <div class="grid_2-1">
+
+
+
+
+
+
+            </div>
+
+
+        </section>
 
     </main>
     <footer>
 
     </footer>
     <script src="js/login.js"></script>
+
 </body>
 
 </html>

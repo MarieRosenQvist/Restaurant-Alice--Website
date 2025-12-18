@@ -1,4 +1,35 @@
 
+/*******HEADER********/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: #E8DEAEFC;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.alice_logo_orang img {
+  height: 60px;
+  width: auto;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #e3ab3c;
+}
+
+
+
+/*******BODY*****/
 
 body {
   font-family: lalezar;
@@ -14,25 +45,14 @@ a {
 }
 
 
-
 /*****FORSIDE****/
+
 .forside-billede {
   width: 400px;
   height: auto;
   margin: 20px 0;
 }
-.forside-billeder {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 15px;
-  justify-items: center;
-}
 
-.forside-billeder img {
-  width: 100%;
-  max-width: 200px;
-  border-radius: 10px;
-}
 .center-content {
   display: flex;
   flex-direction: column;
@@ -40,11 +60,92 @@ a {
   gap: 15px;
 }
 .menu {
-  display: inline-block;
-  background-color: #44613C;
+  display: center;
+  background-color: #d2d5d1;
   padding: 10px 20px;
   border-radius: 10px;
   margin-bottom: 20px;
+}
+.center-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+
+/********FORSIDETEKST**********/
+
+.hero {
+  position: relative;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  font-size: clamp(1.5rem, 5vw, 3rem);
+  padding: 0 1rem;
+}
+
+.forside-billede {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+.forside-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto 40px auto;
+  padding: 0 20px;
+}
+.forside-tekst {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  color: #44613C;
+  line-height: 1.6;
+}
+.forside-tekst .highlight {
+  font-weight: bold;
+  background-color: rgba(255,255,255,0.3);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+/*****Billederækkeforside*****/
+.billede-række {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  overflow: hidden;
+}
+
+.billede-række img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  filter: grayscale(30%) brightness(0.9);
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.billede-række img:hover {
+  transform: scale(1.1);
+  filter: grayscale(0%) brightness(1);
+  z-index: 2;
 }
 
 
@@ -88,33 +189,33 @@ footer {
   transform: scale(1.03);
 }
 
-/*******HEADER********/
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 40px;
-  background-color: #E8DEAEFC;
-  position: sticky;
-  top: 0;
-  z-index: 10;
+
+/******MOBILVERSION*******/
+@media (max-width: 768px) {
+  .billede-række {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .billede-række img {
+    height: 120px;
+  }
 }
 
-.alice_logo_orang img {
-  height: 60px;
-  width: auto;
+@media (max-width: 768px) {
+  .forside-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .forside-tekst {
+    align-items: center;
+  }
+
+  .forside-tekst p {
+    text-align: center;
+  }
 }
 
-.nav-links {
-  display: flex;
-  list-style: none;
-  gap: 20px;
-}
-
-.nav-links a:hover,
-.nav-links a.active {
-  color: #e3ab3c;
-}
-
+/******burgermenu*******/
 
 
