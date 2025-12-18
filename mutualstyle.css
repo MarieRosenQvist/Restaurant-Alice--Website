@@ -42,9 +42,8 @@ header {
 /*********FOOTER********/
 footer {
   text-align: center;
-  padding: 20px;
+  padding: 10px;
   background-color: #44613c;
-  margin-top: 40px;
 }
 
 .socials {
@@ -79,7 +78,6 @@ footer {
   transform: scale(1.03);
 }
 
-
 /**********FONTS********/
 :root {
   --baggrund: #e9dfb7;
@@ -103,4 +101,42 @@ h3,
   font-family: "Paprika", system-ui;
   font-weight: 400;
   font-style: normal;
+}
+
+/******** måske fucked *******/
+h1 {
+  font-family: "Neonderthaw", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1,
+h2 {
+  line-height: 1.25;
+}
+
+p,
+li {
+  text-wrap: pretty;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+textarea {
+  resize: none;
+  min-height: 4lh;
+}
+
+/* LAYOUT FOR MAIN CONTENT */
+body {
+  display: grid;
+  grid-template-rows: auto auto;
+  height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: var(--baggrund);
 }
