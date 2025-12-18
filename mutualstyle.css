@@ -17,7 +17,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 15px 40px;
-  background-color: #E8DEAEFC;
+  background-color: #e8deaefc;
   position: sticky;
   top: 0;
   z-index: 10;
@@ -39,12 +39,11 @@ header {
   color: #e3ab3c;
 }
 
-
 /*********FOOTER********/
 footer {
   text-align: center;
   padding: 20px;
-  background-color: #44613C;
+  background-color: #44613c;
   margin-top: 40px;
 }
 
@@ -72,13 +71,10 @@ footer {
   max-width: 350px;
   border-radius: 10px;
   object-fit: cover;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
 
 .image-gallery img:hover {
   transform: scale(1.03);
 }
-
-
-
