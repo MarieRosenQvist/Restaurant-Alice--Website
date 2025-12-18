@@ -78,3 +78,29 @@ footer {
 .image-gallery img:hover {
   transform: scale(1.03);
 }
+
+
+/**********FONTS********/
+:root {
+  --baggrund: #e9dfb7;
+  --top: #e9dfb7;
+  --gron: #3e5639;
+  --gron_moerk: #2f452c;
+  --guld: #e1b94e;
+  --tekst: #1e1e1e;
+  --max: 1200px;
+}
+
+p,
+.nobile-regular {
+  font-family: "Nobile", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h3,
+.paprika-regular {
+  font-family: "Paprika", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
