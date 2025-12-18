@@ -1,0 +1,97 @@
+:root {
+  --baggrund: #e9dfb7;
+  --top: #e9dfb7;
+  --gron: #3e5639;
+  --gron_moerk: #2f452c;
+  --guld: #e1b94e;
+  --tekst: #1e1e1e;
+  --max: 1200px;
+}
+
+.side {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 20px 16px 30px;
+}
+
+/* SIDE */
+.side {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 20px 16px 30px;
+}
+.side_titel {
+  text-align: center;
+  font-family: Georgia, serif;
+  font-style: italic;
+  margin: 18px 0 18px;
+}
+
+/* LAYOUT DESKTOP: 2 kolonner */
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 420px;
+  gap: 28px;
+  align-items: start;
+}
+
+/* VENSTRE */
+.intro {
+  text-align: center;
+  margin-bottom: 14px;
+}
+.intro_pris {
+  margin: 10px 0 6px;
+  font-size: 20px;
+}
+.intro_note,
+.intro_lille {
+  margin: 6px 0;
+}
+
+.tekstblok {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+.velbekomme {
+  margin-top: 22px;
+  font-weight: 700;
+}
+
+/* 3 billede-placeringer */
+.billeder {
+  margin-top: 22px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  justify-items: center;
+}
+.billede_box {
+  width: 100%;
+  max-width: 230px;
+  aspect-ratio: 4 / 3;
+  background: #d7d7d7;
+  border: 1px solid rgba(0, 0, 0, 0.35);
+}
+
+/* HØJRE: menu-boks */
+.menu_boks {
+  background: var(--gron);
+  color: #fff;
+  padding: 18px 16px;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+}
+.menu_titel {
+  text-align: center;
+  margin: 0 0 12px;
+  font-size: 14px;
+  font-weight: 700;
+}
+.menu_liste p {
+  margin: 14px 0;
+  text-align: center;
+  line-height: 1.35;
+  font-size: 12px;
+}
