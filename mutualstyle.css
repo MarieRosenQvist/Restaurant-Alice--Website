@@ -29,14 +29,24 @@ header {
 }
 
 .nav-links {
+  font-family: "Paprika", system-ui;
   display: flex;
   list-style: none;
   gap: 20px;
+  color: var(--gron_moerk);
 }
 
 .nav-links a:hover,
 .nav-links a.active {
   color: #e3ab3c;
+}
+
+body {
+  display: grid;
+  grid-template-rows: auto auto;
+  min-height: 100vh; /* i stedet for height */
+  margin: 0 auto;
+  background-color: var(--baggrund);
 }
 
 /*********FOOTER********/
@@ -129,14 +139,4 @@ img {
 textarea {
   resize: none;
   min-height: 4lh;
-}
-
-/* LAYOUT FOR MAIN CONTENT */
-body {
-  display: grid;
-  grid-template-rows: auto auto;
-  height: 100vh;
-  max-width: 1200px;
-  margin: 0 auto;
-  background-color: var(--baggrund);
 }
